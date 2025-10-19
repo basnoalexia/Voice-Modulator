@@ -2,39 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF8">
-    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voice Modulator</title>
     <link rel="stylesheet" href="style.css">
   </head>
 
   
   <body>
-
-    <nav>
+    <header>
       <h1>Voice Modulator Tool</h1>
-    </nav>
+    </header>
 
-    <section id="main-content">
-      <div id="recorder">
-        <button class="start-record">Start Recording</button>
-        <button class="stop-record">Stop</button>
-        <audio controls hidden="true"></audio>
+    <main id="main-content">
+      <section class="recorder">
+        <button class="effect-button">Start Recording</button>
+        <button class="effect-button">Stop</button>
+        <audio controls></audio>
+      </section>
+
+      <section class="effects">
+        <h2> Choose Effect</h2>
+        <div class="effect-buttons">
+          <button class>="effect">Reverb</button>
+           <button class>="effect">Pitch Shift</button>
+           <button class>="effect">Distortion</button>
       </div>
+      </section>
 
-      <div id="effects">
-        <h3>Effects</h3>
-        <ul>
-          <li>button id="reverb>Reverb</button</li>
-          <li>button id="pitch">Pitch Shift</button</li>
-          <li>button class="effect">Distortion</button</li>
-        </ul>
-      </div>
-
-      <canvas class="canvas" width="500px" height="200px"></canvas>
-    </section>
+      <canvas id="visualiser" width="500" height="200"></canvas>
+    </main>
 
     <footer>
-      <p>Copyright 2025 VoiceMod</p>
+     <p>© 2025 VoiceMod</p>
     </footer>
     
   </body>
