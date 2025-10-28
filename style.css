@@ -27,22 +27,30 @@ header {
     border: 1px dotted #ddd;
     width: 80%;
     max-width: 600px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
 .effect-buttons {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
+    align-items: center;
+    
 }
 
 .effect, .effect-button {
     margin: 10px;
     padding: 12px;
-    background: #222;
+    background: #970606;
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    text-align: center;
 }
 
 canvas {
