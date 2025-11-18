@@ -3,6 +3,9 @@ body {
     background-color: #fafafa;
     padding: 0;
     margin: 0;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -14,44 +17,51 @@ header {
 
 
 #main-content {
+    width: 100%;
+    max-width: 900px;   
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
     padding-top: 30px;
+    gap: 2rem;
 }
 
 .recorder, .effects {
-    margin: 20px;
-    padding: 15px;
-    border: 1px dotted #ddd;
     width: 80%;
     max-width: 600px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px dotted #ddd;
+    border-radius: 8px;
+    display: flex;      
+    align-items: center;      
+    gap: 1rem;                
+    text-align: center;
+}
+.recorder{
+    flex-direction: row; 
+}
+.effects{
+    flex-direction: column;
 }
 
-.effect-buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    
-}
 
-.effect, .effect-button {
+
+
+.effect, .btn {
     margin: 10px;
-    padding: 12px;
+    padding: 12px 18px;
     background: #970606;
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     text-align: center;
+    font-size: 1rem;          
+    justify-content: center;   
+    gap: 0.75rem 1rem;
 }
+
 
 canvas {
     border: 2px dotted lightgray;
