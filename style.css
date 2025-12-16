@@ -62,9 +62,37 @@ header {
     gap: 0.75rem 1rem;
 }
 
+/* Active state for effect buttons */
+.effect {
+    transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease, color 150ms ease;
+}
+
+.effect.active {
+    background: white;
+    color: #970606;
+    border: 2px solid #970606;
+    box-shadow: 0 6px 18px rgba(151,6,6,0.18);
+    transform: translateY(-3px);
+}
+
+/* Keyboard focus styles for accessibility */
+.effect:focus {
+    outline: 3px solid rgba(151,6,6,0.18);
+    outline-offset: 4px;
+    box-shadow: 0 6px 12px rgba(151,6,6,0.12) inset;
+}
+
+/* Current effect label */
+.current-effect {
+    margin-top: 18px;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+}
+
 
 canvas {
     border: 2px dotted lightgray;
-    display: block;
+    display: none; /* hidden until visualizer is active */
     margin: 20px auto 0 auto;
 }
